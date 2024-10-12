@@ -1,7 +1,9 @@
 // import { createElement } from "react";
-import { TodoList } from "./TodoList";
-import { TodoListClass } from "./TodoListClass";
-import { Name } from "./Name";
+// import { TodoList } from "./TodoList";
+// import { TodoListClass } from "./TodoListClass";
+// import { NameClass } from "./NameClass";
+import { NameFunc } from "./NameFunc";
+import { TodoListItem } from "./TodoListItem";
 
 function App() {
   // return createElement(
@@ -29,10 +31,16 @@ function App() {
 
   return (
     <div>
-      <h1>Todo List</h1>
-      <TodoList />
-      <TodoListClass />
-      <Name />
+      {/* <h1>Todo List</h1> */}
+      {/* <TodoList /> */}
+      {/* <TodoListClass /> */}
+      {/* <NameClass /> */}
+      {/* <NameFunc name="ardalan" age="30" isProgramer={true} /> */}
+      {/* <NameFunc name="hashem" age={54} isProgramer={false} /> */}
+      {/* <NameFunc>
+        <span>hello</span>
+      </NameFunc> */}
+      <TodoListItem isCompleted={true}>todo item 1</TodoListItem>
     </div>
   );
 }
